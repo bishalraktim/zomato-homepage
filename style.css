@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.accounts {
+  color: #ffffff;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.account {
+  border: 1.5px solid white;
+  padding: 10px;
+  position: relative;
+  bottom: 11px;
+  cursor: pointer;
+}
+
+.right-text {
+  color: white;
+  position: relative;
+  top: 16px;
+  margin-right: 4%;
+  cursor: pointer;
+}
+
+nav {
+  margin-top: -9px;
+  background: linear-gradient(to right, #de6262, #ed5853);
+  position: fixed;
+}
+
+.navbar-light .navbar-toggler {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #ffffff;
+  margin-top: 10px;
+}
+
+.items {
+  display: flex;
+  width: 450px;
+  justify-content: space-around;
+}
+
+img {
+  width: 100%;
+  height: 590px;
+  object-fit: cover;
+}
+
+.logo {
+  background-color: white;
+  color: #cf391c;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+
+.logo span {
+  font-weight: bold;
+  top: 18px;
+  left: 30px;
+  position: relative;
+  font-size: 40px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -300px;
+}
+
+.text > input {
+  outline: none;
+  margin: 12px;
+  padding: 12px;
+  width: 300px;
+}
+
+.fa-search {
+  color: #7f899e;
+  font-size: 18px;
+  position: relative;
+  left: 85%;
+}
+
+.col-md-12 {
+  font-weight: bolder;
+  font-size: 32px;
+  color: #ffffff;
+  position: relative;
+  top: -350px;
+  font-family: sans-serif;
+}
+
+.card {
+  height: 250px;
+  margin: 30px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  box-shadow: 10px 15px 20px rgba(47, 108, 158, 0.288);
+}
+
+.card-title {
+  color: #182f60;
+}
+
+.search {
+  color: #182f60;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.heading {
+  color: #7f899e;
+  font-size: 25px;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card-body > p {
+  color: #7f899e;
+  text-align: justify;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.row > .card > img {
+  height: 50%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+#food,
+#food1 {
+  outline: none;
+}
+
+#edu-logo {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -440px;
+  animation: our-logo 5s infinite;
+}
+
+#image-lists {
+  margin-top: -200px;
+}
+
+input::-webkit-calendar-picker-indicator {
+  display: none !important;
+}
+
+body {
+  background-color: #fbfbfb;
+}
+
+.bodyToggle {
+  background-color: #000000;
+}
+
+.accounts img {
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  position: relative;
+  top: -3px;
+}
+
+@keyframes our-logo {
+  0% {
+    margin-left: 35%;
+  }
+  25% {
+    margin-left: 0%;
+  }
+  50% {
+    margin-right: 45%;
+  }
+  75% {
+    margin-right: 0%;
+  }
+  100% {
+    margin-left: 45%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .items {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .account {
+    border: none;
+    margin-left: -1px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .inputs {
+    flex-direction: column;
+  }
+
+  .text > input {
+    width: 200px;
+  }
+
+  .fa-search {
+    display: none;
+  }
+
+  #edu-logo {
+    top: -495px;
+  }
+
+  .col-md-12 {
+    font-size: 25px;
+    top: -470px;
+  }
+
+  .inputs {
+    top: -450px;
+  }
+}
+
+@media screen and (max-width: 225px) {
+  .text > input {
+    width: 100px;
+  }
+
+  .text > input::placeholder {
+    font-size: 8px;
+  }
+
+  .card {
+    height: 350px;
+  }
+
+  #image-lists {
+    margin-top: -400px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #image-lists {
+    margin-top: -285px;
+  }
+}
+
+@media screen and (max-width: 526px) {
+  #image-lists {
+    margin-top: -330px;
+  }
+}

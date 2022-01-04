@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Second-Assignment</title>
+</head>
+
+<body>
+    <!-- navbar begins -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler ms-auto ms-sm-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="ms-auto">
+                    <div class="items right-text">
+                        <p class="accounts" onclick="changeMode()"><img src="https://i.ibb.co/Jp36Ljf/Bulb.jpg"
+                                alt="change mode"></p>
+                        <p class="accounts">Login</p>
+                        <p class="accounts account">Create an account</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar ends -->
+
+    <!-- Wallpaper image begins -->
+    <img src="https://i.ibb.co/4YT0hcy/food-Wallpaper.png" alt="food-wallpaper">
+    <!-- Wallpaper image ends -->
+
+    <!-- Edu logo begins -->
+    <div id="edu-logo">
+        <p class="logo">
+            <span>e!</span>
+        </p>
+    </div>
+    <!-- Edu logo ends -->
+
+    <!-- Image title begins -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                Find the best restaurants, cafes, and bars!
+            </div>
+        </div>
+    </div>
+    <!-- Image title ends -->
+
+    <!-- input fields begin -->
+    <div class="inputs">
+        <div class="text">
+            <input type="text" list="foods" name="r-food" id="food" placeholder="Locations">
+            <datalist id="foods">
+                <option value="Carlton"></option>
+                <option value="Docklands"></option>
+                <option value="East Melbourne"></option>
+                <option value="Kensington"></option>
+                <option value="North Melbourne"></option>
+                <option value="Parkville"></option>
+            </datalist>
+        </div>
+
+        <div class="text">
+            <i class="fa fa-search"></i>
+            <input type="text" list="res" name="r-food" id="food1" placeholder="Restaurants">
+            <datalist id="res">
+                <option value="Kewpie"></option>
+                <option value="The Hardware Club"></option>
+                <option value="Sunda Dining"></option>
+                <option value="Hazel"></option>
+                <option value="Coda Melbourne"></option>
+                <option value="Osteria Ilaria"></option>
+            </datalist>
+        </div>
+    </div>
+    <!-- input fields end -->
+
+    <!-- Restaurant image list begins -->
+    <div class="container" id="image-lists">
+        <div class="titles">
+            <div class="search">Quick Searches</div>
+            <div class="heading">Discover restaurants by type of meal</div>
+        </div>
+
+        <div class="row">
+            <div class="card col-lg-3">
+                <img src="https://i.ibb.co/CPJKkNd/photo-1459789034005-ba29c5783491-ixlib-rb-1-2-1-q-60-fm-jpg-crop-faces-edges-cs-tinysrgb-w-1200-fit.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Breakfast</h5>
+                    <p class="card-text">Start your day with some exclusive breakfast options.</p>
+                </div>
+            </div>
+            <div class="card col-lg-3">
+                <img src="https://i.ibb.co/RctsxvL/photo-1552611052-33e04de081de-ixlib-rb-1-2.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lunch</h5>
+                    <p class="card-text">Start your day with some exclusive breakfast options.</p>
+                </div>
+            </div>
+            <div class="card col-lg-3">
+                <img src="https://i.ibb.co/PtjxYtj/photo-1518843875459-f738682238a6-ixlib-rb-1-2.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Snacks</h5>
+                    <p class="card-text">Start your day with some exclusive breakfast options.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="card col-lg-3">
+                <img src="https://i.ibb.co/b1PjfvW/dinner.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Dinner</h5>
+                    <p class="card-text">Start your day with some exclusive breakfast options.</p>
+                </div>
+            </div>
+            <div class="card col-lg-3">
+                <img src="https://i.ibb.co/FhFwMkN/drinks.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Drinks</h5>
+                    <p class="card-text">Start your day with some exclusive breakfast options.</p>
+                </div>
+            </div>
+            <div class="card col-lg-3">
+                <img src="https://i.ibb.co/DC6VYdT/nightlife.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nightlife</h5>
+                    <p class="card-text">Start your day with some exclusive breakfast options.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Restaurant image list ends -->
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
