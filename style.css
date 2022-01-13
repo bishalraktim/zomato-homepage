@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .accounts {
   color: #ffffff;
   margin: 10px;
@@ -203,6 +207,37 @@ body {
   100% {
     margin-left: 45%;
   }
+}
+
+.mode {
+  background-color: #182f60;
+  width: 350px;
+  height: 350px;
+  margin: auto;
+  position: absolute;
+  top: -50px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  translate: 0.3s ease;
+  /* top: -100px; */
+}
+
+.welcome {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+button {
+  width: 45px;
+  height: 45px;
+}
+#dynamicDrop {
+  position: relative;
+  top: -200px;
 }
 
 @media screen and (max-width: 575px) {
